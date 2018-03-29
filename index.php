@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,49 +13,58 @@
         <script src="js/main.js"></script>
     </head>
     <body>
+        <!-- Header-->
         <header>
             <div id="logo">
-                <h3>WOMEN'S ASSOCIATION</h3>
+                <p>WOMEN'S ASSOCIATION</p>
             </div>
             <ul>
                 <li><a data-toggle="modal" data-target="#myModal">Contact Us</a></li>
-                <li><a href="http://"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                <li><a href="http://"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
             </ul>
         </header>
+        <!-- Modal window-->
         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Contact Us</h4>
-                    </div>
                     <div class="modal-body">
-                        <form action="#" method="post">
-                            <div class="form-group">
-                                <label for="name">User Name:</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                        <div id="contact">
+                            <div>
+                                <center><h3>PLACE</h3></center>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d174343.69721440427!2d74.43494156925432!3d15.873354184675115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf669f5095362f%3A0x7e34b31edcdefb5f!2sBelgaum%2C+Karnataka!5e0!3m2!1sen!2sin!4v1522345689921" width="100%" height="250" frameborder="0" style="border:1px solid #ddd" allowfullscreen></iframe>
+                                <h4>ADDRESS:</h4>
+                                <p>Belgaum, Karnataka, India</p>
+                                <h4>CONTACT NO.:</h4>
+                                <p><i class="fa fa-phone"></i><a href="#"> 1234567890</a></p>
+                                <p><i class="fa fa-phone"></i><a href="#"> 1234567890</a></p>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <div>
+                                <form action="contact_db.php" method="post">
+                                    <center><h3>GET IN TOUCH</h3></center>
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input type="text" class="form-control" name="name" placeholder="Enter your full name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" name="email" placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num">Phone No.:</label>
+                                        <input type="number" class="form-control" name="pnum" placeholder="Enter your phone number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cmt">Message:</label>
+                                        <textarea class="form-control" name="message" rows="5" placeholder="Enter your message..."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-info" value="Submit">
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="form-group">
-                                <label for="num">Phone No.:</label>
-                                <input type="number" class="form-control" id="num" placeholder="Enter your phone number">
-                            </div>
-                            <div class="form-group">
-                                <label for="cmt">Comment:</label>
-                                <textarea class="form-control" id="cmt" rows="5" placeholder="Enter your comment..."></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" class="btn btn-info" value="Submit">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cansel</button>
+                        </div>
                     </div>
                 </div>
             </div>

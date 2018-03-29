@@ -2,57 +2,76 @@ body{
     padding: 0;
     margin: 0;
     background-image: url('../img/bg.jpg');
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: black;
-    opacity: .5;
-    padding: 1rem 0;
+    opacity: .7;
+    padding: 15px 8% 5px 8%;
+
 }
 
 header #logo{
     color: #fff;
-    padding-left: 10%;
-}
-
-header a{
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-}
-
-header li:nth-child(1) a{
-    border: 1px solid #fff;
-    font-weight: bold;
-}
-
-header li:nth-child(1) a:hover{
-    background-color: #fff;
-    color: #000;
+    font-size: 19px;
 }
 
 header ul{
     text-align: right;
-    padding: 1rem 10%;
+    padding: 0;
 }
 
 header ul li{
     display: inline-block;
     list-style: none;
-    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+header ul li+li{
+    padding-left: 2rem;
+}
+
+header a{
+    color: #fff;
+    cursor: pointer;
+}
+
+header li:nth-child(1) a{
+    border: 2px solid #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 4px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+header a:hover{
+    opacity: .8; 
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+}
+ 
+#contact > *{
+    border: 1px solid #ddd;
+    padding: 1rem;
 }
 @media screen and (max-width: 768px){
-    header{
+    header, #contact{
         grid-template-columns: 1fr;
     }
-    header ul, #logo{
+    header ul{
         text-align: left;
-    }
-    body{
-        background-size: 100% 50vh;
     }
 }
