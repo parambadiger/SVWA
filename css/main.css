@@ -65,27 +65,26 @@ header a:hover{
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
+#contact #info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+#contact #info #detail{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+}
 #contact a{
     text-decoration: none;
     color: blue;
+    margin-right: 2rem;
 }
 #contact a:hover{
     color: #0099e6;
 }
-#contact #number a{
-    margin-right: 3rem;
-}
-#contact #follow{
-    display: flex;
-}
-#contact #follow a{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-right: 3rem;
-}
 @media screen and (max-width: 768px){
-    header{
+    header, #contact #info{
         grid-template-columns: 1fr;
     }
     header ul{
