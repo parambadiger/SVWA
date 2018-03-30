@@ -46,6 +46,7 @@ header a{
 header li:nth-child(1) a{
     border: 2px solid #fff;
     font-weight: bold;
+    letter-spacing: 1px;
     border-radius: 3px;
     padding: 4px;
     background-color: #fff;
@@ -58,17 +59,33 @@ header a:hover{
 }
 
 #contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #fff;
-}
- 
-#contact > *{
     border: 1px solid #ddd;
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+#contact a{
+    text-decoration: none;
+    color: blue;
+}
+#contact a:hover{
+    color: #0099e6;
+}
+#contact #number a{
+    margin-right: 3rem;
+}
+#contact #follow{
+    display: flex;
+}
+#contact #follow a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 3rem;
 }
 @media screen and (max-width: 768px){
-    header, #contact{
+    header{
         grid-template-columns: 1fr;
     }
     header ul{
