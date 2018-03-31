@@ -57,7 +57,9 @@ header li:nth-child(1) a{
 header a:hover{
     opacity: .8; 
 }
-
+#contact .modal-header {
+    border-bottom-style: none !important;
+}
 #contact{
     border: 1px solid #ddd;
     padding: 1rem;

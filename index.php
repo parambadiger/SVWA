@@ -28,7 +28,10 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <div id="contact">
-                            <center><h3>PLACE</h3></center>
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <center><h3 class="modal-title">PLACE</h3></center>
+                            </div>
                             <div id="info">
                                 <div>
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d174343.69721440427!2d74.43494156925432!3d15.873354184675115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf669f5095362f%3A0x7e34b31edcdefb5f!2sBelgaum%2C+Karnataka!5e0!3m2!1sen!2sin!4v1522345689921" width="100%" height="250" frameborder="0" allowfullscreen></iframe>
