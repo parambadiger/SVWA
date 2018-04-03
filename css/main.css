@@ -75,7 +75,12 @@ header a:hover{
 #contact #info #detail{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 12px;
+    grid-gap: 2rem;
+    text-align: center;
+}
+#contact #info #detail #pls{
+    display: flex;
+    justify-content: space-around;
 }
 #contact a{
     text-decoration: none;

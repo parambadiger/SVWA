@@ -43,16 +43,19 @@
                                     </div>
                                     <div>
                                         <b>CONTACT NO.:</b>
-                                        <p><i class="fa fa-phone"></i><a href="#">1234567890</a></p>
-                                        <p><i class="fa fa-phone"></i><a href="#">1234567890</a></p>
+                                        <div id="pls">
+                                            <p><i class="fa fa-phone"></i><a href="#">1234567890</a></p>
+                                            <p><i class="fa fa-phone"></i><a href="#">1234567890</a></p>
+                                        </div>
                                     </div>
                                     <div>
                                         <b>FOLLOW US ON:</b>
-                                        <p>
+                                        <div id="pls">
                                             <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
                                             <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
                                             <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                                        </p>
+                                        </div>    
                                     </div>
                                 </div>
                             </div>
